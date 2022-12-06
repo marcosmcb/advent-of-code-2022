@@ -7,7 +7,7 @@ const [ datastream ] = fs
 
 
 const DISTINCT_CHARACTERS = 14
-const isOutOfBounds = (strLength, index) = index > strLength;
+const isOutOfBounds = (strLength, index) => index > strLength;
 
 for(let i=0; i < datastream.length; i++) {
     
