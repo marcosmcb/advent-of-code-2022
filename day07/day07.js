@@ -57,7 +57,7 @@ fs
 
 
 const sortDirectoryNamesInTree = (directoryTree) => {
-    const directoriesAsc = Object.keys(directoryTree).sort((a, b) => b.length - a.length).reduce(
+    const directoriesDesc = Object.keys(directoryTree).sort((a, b) => b.length - a.length).reduce(
         (obj, key) => { 
           obj[key] = directoryTree[key]; 
           return obj;
@@ -65,7 +65,7 @@ const sortDirectoryNamesInTree = (directoryTree) => {
         {}
     );
 
-    return directoriesAsc;
+    return directoriesDesc;
 }
 
 
